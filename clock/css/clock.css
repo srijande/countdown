@@ -7,8 +7,8 @@
 	z-index: 1;
 }
 #time-container {
-	width: 555px;
-	height: 555px;
+	max-width: 455px;
+	max-height: 455px;
 	margin: 0 auto;
 	position: relative;
 	z-index: 0;

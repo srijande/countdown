@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Full Screen Video Backround With Sound</title>
+		<title>COUNTDOWN</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -29,15 +29,6 @@
 	  font-size: 17px;
 	  position: fixed;
 	}
-
-	#myVideo {
-	  position: fixed;
-	  right: 0;
-	  bottom: 0;
-	  min-width: 100%;
-	  min-height: 100%;
-	}
-
 	.content {
 	  position: fixed;
 	  bottom: 0;
@@ -46,41 +37,16 @@
 	  width: 100%;
 	  padding: 20px;
 	}
-
-	#myBtn {
-	  width: 200px;
-	  font-size: 18px;
-	  padding: 10px;
-	  border: none;
-	  background: #000;
-	  color: #fff;
-	  cursor: pointer;
-	}
-
-	#myBtn:hover {
-	  background: #ddd;
-	  color: black;
-	}
-	#time-container {
-		width: 450px;
-		height: 450px;
-	}
 	.main-menu-container {
 		left: auto;
-		right: 25px;
+		right: 25px;---------
 		bottom: auto;
 		top: 25px;
 	}
 	</style>
-<video autoplay muted loop id="myVideo">
-  <source src="vid.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+	<div id="myVideo"></div>
 	<section class="main-menu-container">
 		<ul class="main-menu">
-			<li>
-				<!-- <a class="sound_button">gh</a> -->
-			</li>
 			<li>
 				<a href="#" class="home-link">Home</a>
 			</li>
@@ -106,33 +72,31 @@
 					</div>
 				</div>
 				<h3>Our website is launching soon</h3>
-				<form action="#" class="subscribe" id="subscribe">
-					<input type="email" placeholder="Enter your email" class="email form_item requiredField" name="subscribe_email" />
-					<input type="submit" class='form_submit' value="subscribe" />
-					<div id="form_results"></div>
-				</form>
 			</div>
 			<div class="mainarea-content">
 					<div id="about" data-page="about" class="side-page active">
 					<div class="container">
 						<h2 class="title">Who we are</h2>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget nibh at libero fringilla adipiscing nec ut leo. Etiam nec purus arcu. Morbi sollicitudin at risus id malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam sed tincidunt arcu. Donec molestie ante sapien, sed molestie est euismod eget. Maecenas ac metus accumsan, scelerisque massa sed, porta est. Aliquam ut mollis mi. Cras id vulputate purus, ac sollicitudin ante.
+							I am Srijan De, currently studing Information Technology from Jalpaiguri Government Engineering College. I have a lot of interest in Competitive programming and Problem-solving. I have some basic knowledge about Web Development and Android Development.
 						</p>
 						<p>
-							Integer condimentum eu lectus quis semper. Sed id metus magna. Morbi ultrices magna id euismod hendrerit. Pellentesque nec mattis odio, vitae laoreet metus. Sed eget sollicitudin est, vitae accumsan nisi. Fusce consequat imperdiet venenatis. Integer mollis hendrerit facilisis. Praesent vel mattis enim. Integer fringilla et urna vitae rutrum.
+							I love to spend my time doing Competitive programming at sites like codechef,codeforces etc. I also spend a huge time of my day to doing Android development in Android Studio.
+						</p>
+						<p>
+							Visit: <a target="_blank" href="https://thesrijande.github.io/">thesrijande.github.io</a> to know more about me..!
 						</p>
 					</div>
 				</div>
 				<div id="contacts" data-page="contacts" class="side-page side-right went-right">
 					<div class="container">
-						<h2 class="title">Get in touch</h2>
+						<h2 class="title">Feel free to contact me</h2>
 						<p>
-							Lexington Avenue · New York, NY
+							712409, Singur, Hooghly, Westbengal, India.
 							<br>
-							P: (123) - 456 789 · email@domain.com
+							+91 8240198215 · sd2220@it.jgec.ac.in
 						</p>
-						<form id='contacts_form' action="#" class="contact-list">
+						<form id='contacts_form' action="https://formspree.io/xqkkowyr" class="contact-list" method="post">
 							<div class="field-row">
 								<input class="form_item" type="text" id="name" name="name" placeholder="Name" />
 							</div>
@@ -143,28 +107,32 @@
 								<input class="form_item" type="text" id="message" name="message" placeholder="Message" />
 							</div>
 							<div class="field-row">
-								<input type="submit" class="form_submit" value="Send Message" />
+								<button type="submit">Send</button>
 							</div>
-							<div id="contact_results"></div>
 						</form>
 					</div>
 				</div>
 			</div>
-			<a class="close" href="#"><img alt="" src="img/close.png"></a>
 		</section>
 		<section class="social-container">
 			<ul class="social">
 				<li>
-					<a class="cc-facebook btn btn-link" href="https://www.facebook.com/thesrijande/"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a>
+					<a class="sound_button"><i class="fa fa-volume-up fa-2x" aria-hidden="true"></i></a>
 				</li>
 				<li>
-					<a class="cc-instagram btn btn-link" href="https://www.instagram.com/thesrijande/"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a>
+					<a target="_blank" href="https://thesrijande.github.io/"><i class="fa fa-globe fa-2x " aria-hidden="true"></i></a>
 				</li>
 				<li>
-					<a class="cc-linkedin btn btn-link " href="https://www.linkedin.com/in/thesrijande/"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a>
+					<a target="_blank" href="https://www.facebook.com/thesrijande/"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a>
 				</li>
 				<li>
-					<a class="cc-google-plus btn btn-link" href="https://github.com/thesrijande/"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+					<a target="_blank" href="https://www.instagram.com/thesrijande/"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a target="_blank" href="https://www.linkedin.com/in/thesrijande/"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a target="_blank" href="https://github.com/thesrijande/"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
 				</li>
 			</ul>
 		</section>
@@ -192,6 +160,37 @@
 				});
 			});
 		</script>
+<script>
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('myVideo', {
+      videoId: '7bv_eqtkKqQ',
+
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+  function onPlayerReady(event) {
+    event.target.playVideo();
+    player.mute();
+			}
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.ENDED) {
+      player.seekTo(0);
+      player.playVideo();
+
+    }
+  }
+  function stopVideo() {
+    player.stopVideo();
+  }
+</script>
 
 	</body>
 </html>
