@@ -117,7 +117,7 @@
 		<section class="social-container">
 			<ul class="social">
 				<li>
-					<a class="sound_button"><i class="fa fa-volume-up fa-2x" aria-hidden="true"></i></a>
+					<a class="sound_button" id="xyz" ><i class="fa fa-volume-up fa-2x" aria-hidden="true"></i></a>
 				</li>
 				<li>
 					<a target="_blank" href="https://thesrijande.github.io/"><i class="fa fa-globe fa-2x " aria-hidden="true"></i></a>
@@ -159,6 +159,8 @@
 					$(this).toggleClass('muted');
 				});
 			});
+			// start sound by default
+			document.getElementById('xyz').click();
 		</script>
 <script>
   var tag = document.createElement('script');
